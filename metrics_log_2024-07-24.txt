@@ -1,9 +1,16 @@
 URL: https://alaskaair.com
-Fetch Time: 2024-07-24T22:22:45.504839+00:00
-First Contentful Paint: 1406.95696
-Largest Contentful Paint: 2910.3871499999996
-Time to Interactive: 4440.170268
-Total Blocking Time: 130.99999999999977
-Cumulative Layout Shift: 0.04176824037040718
-Speed Index: 2458.7099590528937
+Fetch Time: 2024-07-24T23:06:54.292517+00:00
+First Contentful Paint: 1.63 seconds
+Largest Contentful Paint: 3.40 seconds
+Time to Interactive: 4.49 seconds
+Total Blocking Time: 0.122 seconds
+Cumulative Layout Shift: 0.043
+Speed Index: 3.36 seconds
 
+Summary:
+First Contentful Paint: 1.63 seconds - Good
+Largest Contentful Paint: 3.40 seconds - Needs Improvement
+Time to Interactive: 4.49 seconds - Needs Improvement
+Total Blocking Time: 0.122 seconds - Good
+Cumulative Layout Shift: 0.043 - Good
+Speed Index: 3.36 seconds - Good
