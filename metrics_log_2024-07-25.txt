@@ -1,16 +1,53 @@
 URL: https://alaskaair.com
-Fetch Time: 2024-07-25T16:06:55.809991+00:00
-First Contentful Paint: 1.48 seconds
-Largest Contentful Paint: 2.96 seconds
-Time to Interactive: 4.49 seconds
-Total Blocking Time: 0.173 seconds
-Cumulative Layout Shift: 0.043
-Speed Index: 4.16 seconds
+Fetch Time: 2024-07-25T22:58:11.933243+00:00
+First Contentful Paint: 1.51 seconds
+Largest Contentful Paint: 2.98 seconds
+Time to Interactive: 4.54 seconds
+Total Blocking Time: 0.168 seconds
+Cumulative Layout Shift: 0.044
+Speed Index: 2.47 seconds
+Performance Score: 68.60
+First Meaningful Paint: 0.00 seconds
+First CPU Idle: 0.00 seconds
+Max Potential FID: 0.22 seconds
+Estimated Input Latency: 0.00 seconds
+Server Response Time: 0.33 seconds
+JavaScript Bootup Time: 0.79 seconds
+Total Byte Weight: 4316880.60 bytes
+Render Blocking Resources: 421.00 seconds
+Unused JavaScript: 218.00 bytes
+Unused CSS: 0.00 bytes
+DOM Size: 2052.00
+Preconnect Origins: 0.00
+Properly Sized Images: 0.00
+Efficiently Encoded Images: 0.00
+Minimize Main Thread Work: 1508.66 seconds
+Minimize Render Blocking Stylesheets: 0.00 seconds
+Avoid Large Layout Shifts: 0.00
 
 Summary:
-First Contentful Paint: 1.48 seconds - Good
-Largest Contentful Paint: 2.96 seconds - Needs Improvement
-Time to Interactive: 4.49 seconds - Needs Improvement
-Total Blocking Time: 0.173 seconds - Good
-Cumulative Layout Shift: 0.043 - Good
-Speed Index: 4.16 seconds - Needs Improvement
+First Contentful Paint: 1.51 seconds - Good
+Largest Contentful Paint: 2.98 seconds - Needs Improvement
+Time to Interactive: 4.54 seconds - Needs Improvement
+Total Blocking Time: 0.168 seconds - Good
+Cumulative Layout Shift: 0.044 - Good
+Speed Index: 2.47 seconds - Good
+Performance Score: 68.60 - Needs Improvement
+
+First Meaningful Paint: 0.00 seconds
+First CPU Idle: 0.00 seconds
+Max Potential FID: 0.22 seconds
+Estimated Input Latency: 0.00 seconds
+Server Response Time: 0.33 seconds
+JavaScript Bootup Time: 0.79 seconds
+Total Byte Weight: 4316880.60 bytes
+Render Blocking Resources: 421.00 seconds
+Unused JavaScript: 218.00 bytes
+Unused CSS: 0.00 bytes
+DOM Size: 2052.00
+Preconnect Origins: 0.00
+Properly Sized Images: 0.00
+Efficiently Encoded Images: 0.00
+Minimize Main Thread Work: 1508.66 seconds
+Minimize Render Blocking Stylesheets: 0.00 seconds
+Avoid Large Layout Shifts: 0.00
