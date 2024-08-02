@@ -120,46 +120,113 @@ impl LighthouseMetrics {
     }
 
     fn evaluate(&self) -> String {
+        let mut good_count = 0;
+        let mut needs_improvement_count = 0;
+        let mut poor_count = 0;
+
         let fcp_eval = match self.first_contentful_paint {
-            x if x <= 1.8 => "Good",
-            x if x <= 3.0 => "Needs Improvement",
-            _ => "Poor",
+            x if x <= 1.8 => {
+                good_count += 1;
+                "Good"
+            }
+            x if x <= 3.0 => {
+                needs_improvement_count += 1;
+                "Needs Improvement"
+            }
+            _ => {
+                poor_count += 1;
+                "Poor"
+            }
         };
 
         let lcp_eval = match self.largest_contentful_paint {
-            x if x <= 2.5 => "Good",
-            x if x <= 4.0 => "Needs Improvement",
-            _ => "Poor",
+            x if x <= 2.5 => {
+                good_count += 1;
+                "Good"
+            }
+            x if x <= 4.0 => {
+                needs_improvement_count += 1;
+                "Needs Improvement"
+            }
+            _ => {
+                poor_count += 1;
+                "Poor"
+            }
         };
 
         let tti_eval = match self.time_to_interactive {
-            x if x <= 3.8 => "Good",
-            x if x <= 7.3 => "Needs Improvement",
-            _ => "Poor",
+            x if x <= 3.8 => {
+                good_count += 1;
+                "Good"
+            }
+            x if x <= 7.3 => {
+                needs_improvement_count += 1;
+                "Needs Improvement"
+            }
+            _ => {
+                poor_count += 1;
+                "Poor"
+            }
         };
 
         let tbt_eval = match self.total_blocking_time {
-            x if x <= 0.2 => "Good",
-            x if x <= 0.6 => "Needs Improvement",
-            _ => "Poor",
+            x if x <= 0.2 => {
+                good_count += 1;
+                "Good"
+            }
+            x if x <= 0.6 => {
+                needs_improvement_count += 1;
+                "Needs Improvement"
+            }
+            _ => {
+                poor_count += 1;
+                "Poor"
+            }
         };
 
         let cls_eval = match self.cumulative_layout_shift {
-            x if x <= 0.1 => "Good",
-            x if x <= 0.25 => "Needs Improvement",
-            _ => "Poor",
+            x if x <= 0.1 => {
+                good_count += 1;
+                "Good"
+            }
+            x if x <= 0.25 => {
+                needs_improvement_count += 1;
+                "Needs Improvement"
+            }
+            _ => {
+                poor_count += 1;
+                "Poor"
+            }
         };
 
         let si_eval = match self.speed_index {
-            x if x <= 3.4 => "Good",
-            x if x <= 5.8 => "Needs Improvement",
-            _ => "Poor",
+            x if x <= 3.4 => {
+                good_count += 1;
+                "Good"
+            }
+            x if x <= 5.8 => {
+                needs_improvement_count += 1;
+                "Needs Improvement"
+            }
+            _ => {
+                poor_count += 1;
+                "Poor"
+            }
         };
 
         let ps_eval = match self.performance_score {
-            x if x >= 90.0 => "Good",
-            x if x >= 50.0 => "Needs Improvement",
-            _ => "Poor",
+            x if x >= 90.0 => {
+                good_count += 1;
+                "Good"
+            }
+            x if x >= 50.0 => {
+                needs_improvement_count += 1;
+                "Needs Improvement"
+            }
+            _ => {
+                poor_count += 1;
+                "Poor"
+            }
         };
 
         format!(
@@ -186,7 +253,11 @@ impl LighthouseMetrics {
             Efficiently Encoded Images: {:.2}\n\
             Minimize Main Thread Work: {:.2} seconds\n\
             Minimize Render Blocking Stylesheets: {:.2} seconds\n\
-            Avoid Large Layout Shifts: {:.2}\n",
+            Avoid Large Layout Shifts: {:.2}\n\n\
+            Evaluation Summary:\n\
+            Good: {}\n\
+            Needs Improvement: {}\n\
+            Poor: {}\n",
             self.first_contentful_paint, fcp_eval,
             self.largest_contentful_paint, lcp_eval,
             self.time_to_interactive, tti_eval,
@@ -211,6 +282,9 @@ impl LighthouseMetrics {
             self.minimize_main_thread_work,
             self.minimize_render_blocking_stylesheets,
             self.avoid_large_layout_shifts,
+            good_count,
+            needs_improvement_count,
+            poor_count,
         )
     }
 }
