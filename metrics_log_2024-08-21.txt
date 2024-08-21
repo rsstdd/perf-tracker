@@ -1,0 +1,57 @@
+URL: https://alaskaair.com
+Fetch Time: 2024-08-21T15:27:55.754921+00:00
+First Contentful Paint: 1.55 seconds
+Largest Contentful Paint: 2.90 seconds
+Time to Interactive: 4.15 seconds
+Total Blocking Time: 0.198 seconds
+Cumulative Layout Shift: 0.041
+Speed Index: 2.51 seconds
+Performance Score: 67.20
+First Meaningful Paint: 0.00 seconds
+First CPU Idle: 0.00 seconds
+Max Potential FID: 0.22 seconds
+Estimated Input Latency: 0.00 seconds
+Server Response Time: 0.34 seconds
+JavaScript Bootup Time: 0.73 seconds
+Total Byte Weight: 4309755.00 bytes
+Render Blocking Resources: 460.00 seconds
+Unused JavaScript: 238.00 bytes
+Unused CSS: 0.00 bytes
+DOM Size: 2045.00
+Preconnect Origins: 0.00
+Properly Sized Images: 0.00
+Efficiently Encoded Images: 0.00
+Minimize Main Thread Work: 1372.33 seconds
+Minimize Render Blocking Stylesheets: 0.00 seconds
+Avoid Large Layout Shifts: 0.00
+
+Summary:
+First Contentful Paint: 1.55 seconds - Good
+Largest Contentful Paint: 2.90 seconds - Needs Improvement
+Time to Interactive: 4.15 seconds - Needs Improvement
+Total Blocking Time: 0.198 seconds - Good
+Cumulative Layout Shift: 0.041 - Good
+Speed Index: 2.51 seconds - Good
+Performance Score: 67.20 - Needs Improvement
+First Meaningful Paint: 0.00 seconds
+First CPU Idle: 0.00 seconds
+Max Potential FID: 0.22 seconds
+Estimated Input Latency: 0.00 seconds
+Server Response Time: 0.34 seconds
+JavaScript Bootup Time: 0.73 seconds
+Total Byte Weight: 4309755.00 bytes
+Render Blocking Resources: 460.00 seconds
+Unused JavaScript: 238.00 bytes
+Unused CSS: 0.00 bytes
+DOM Size: 2045.00
+Preconnect Origins: 0.00
+Properly Sized Images: 0.00
+Efficiently Encoded Images: 0.00
+Minimize Main Thread Work: 1372.33 seconds
+Minimize Render Blocking Stylesheets: 0.00 seconds
+Avoid Large Layout Shifts: 0.00
+
+Evaluation Summary:
+Good: 4
+Needs Improvement: 3
+Poor: 0

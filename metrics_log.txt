@@ -6,4 +6,3 @@ Time to Interactive: 3.4
 Total Blocking Time: 0.5
 Cumulative Layout Shift: 0.01
 Speed Index: 1234.5
-
